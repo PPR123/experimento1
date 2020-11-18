@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>experimento 2</title>
+	<meta charset="utf-8">
+	<meta name="author" content="Ricardito Boca de Caçapa">
+	<meta name="descripition" content="Página sem fins lucrativos que visa promnover a educação de diversas formas por meio de fins tecnlogicos">
+	<meta name="keywords" content="curso, em, video">
+	<meta http-equiv="Refresh" content="4576;experimento.html">
+	<style type="text/css">
+		body{background-image: url(fotos/natureza.jpg); background-color: #aa00aa;background-attachment: fixed;background-size: 100%}
+		#R1{position:  absolute; top:19px; left: 90px;}
+		#R2{position: absolute;top: 19px;left: 1200px}
+		#sencionando{float: left;margin:15px;background-color: #a2ddba;border-radius: 15px;background:linear-gradient(to bottom, #a2ddba, #a0a8b8);}
+		h4{font-family: Helvetica;}
+		#ou{width: 670px;border-radius: 15px;}
+	</style>
+	<script type="text/javascript">
+		function soma() {
+				var op = document.querySelector('button.ri');
+
+
+				if (op.onclick) {document.getElementById('corpo').style.backgroundImage='url(fotos/nature.gif)'}
+				else{alert("ok")}
+		}
+	 	function sub() {
+	 			var op = document.querySelector('button.ru');
+	 			if (op) {document.getElementById('corpo').style.backgroundImage='url(fotos/natureza.jpg)';document.getElementById('corpo').style.backgroundAttachment='fixed';document.getElementById('corpo').style.backgroundSize='100%' }
+
+	 	}
+	 	function abre(link) {
+	 		window.open(link)
+	 	}
+	 	
+	</script>
+</head>
+<body id="corpo">
+		<header>
+			<article><h3 style="text-align: center; border-right: 200px #aaaaaa solid; border-left: 200px #aaaaaa solid;border-top-left-radius: 150px;border-top-right-radius: 150px ">Floresta Amazônica um Debate que Ainda Está de Pé!!!</h3></article>
+			<div id="R2">
+				<button style="width: 80px; background-color: #993399" class="ri" onclick="soma()">R2</button>
+			</div>
+			<div id="R1">
+				<button style="width: 80px; background-color: #884488" class="ru" onclick="sub()">R1</button>
+			</div>
+		</header>
+		<header id="sencionando">
+				<h4 >A floresta amazônica é considerada a maior floresta tropical do mundo e concentra enorme biodiversidade. Além disso, ela faz parte do bioma Amazônia, o maior dos seis biomas brasileiros.
+
+				Ela corresponde a 53% das florestas tropicais ainda 		existentes. Por isso, a sua conservação é debatida em âmbito 	internacional por sua dimensão e importância ecológica.</h4>
+
+		</header>
+		<nav style="background-color: #a2deba;margin:0px 15px 15px 15px;float:left;border-radius: 15px;height: 500px;width: 150px">
+			<h5>Botões De Manipulação</h5>
+			<button name="ppr" onclick="document.getElementById('ou').pause()">Clique 1</button>
+			<button name="ppp" onclick="document.getElementById('ou').play()"><img src="bt/btplay1.png" style="width: 90px;height: 50px"></button>
+			
+		</nav>
+		<aside style="float: right;width: 150px;height: 500px;background-color: #a3dbab;border-radius: 15px;margin:0px 15px 15px 15px">
+			<button onclick="document.getElementById('ou').volume+=0.1">Volume +</button>
+			<button onclick="document.getElementById('ou').volume -= 0.1">Volume -</button>
+			
+		</aside>
+		<section style="width: 940px;height: 500px;background-color: #808080;float: left;margin:0px 15px 15px 15px;border-radius: 15px">
+			<div style="position: absolute;top: 250px;left: 320px; ">
+				<a href="https://www.youtube.com/watch?v=kXYiU_JCYtU"><video preload="auto" src="fotos/numb.mp4" id="ou"></a>
+
+					
+				</video>
+				<article>
+					<p><h4>Linkin Park Numb</h4></p>
+				</article>
+			</div>
+			
+			
+		</section>
+		<footer style="width: 1300px;background-color: #a4ddba;height: 100px;float: left;margin:0px 15px 15px 15px;border-radius: 15px; ">
+			<div>
+				<button onclick="abre(value)" value="aula23.html" id="bt1">Home</button>
+			</div>
+			<div>
+				<button onclick="abre(value)" value="aula24.html" id="bt2"></button>
+			</div>
+			
+		</footer>
+</body>
+</html>
